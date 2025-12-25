@@ -35,12 +35,6 @@ Install latest from the GitHub
 $ pip install git+https://github.com/chrphb/nbsstorytime.git
 ```
 
-or from [conda](https://anaconda.org/chrphb/nbsstorytime)
-
-``` sh
-$ conda install -c chrphb nbsstorytime
-```
-
 or from [pypi](https://pypi.org/project/nbsstorytime/)
 
 ``` sh
