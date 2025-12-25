@@ -5,12 +5,12 @@
 # %% auto 0
 __all__ = ['find_current_notebook', 'nbsstorytime_export']
 
-# %% ../nbs/00_core.ipynb 9
+# %% ../nbs/00_core.ipynb 8
 import json
 from ipykernel import get_connection_info
 from fastcore.basics import Path
 
-# %% ../nbs/00_core.ipynb 10
+# %% ../nbs/00_core.ipynb 9
 def find_current_notebook():
     conn_info = None
     try:
@@ -26,7 +26,7 @@ def find_current_notebook():
         print("not running in notebook", e)
         return None
 
-# %% ../nbs/00_core.ipynb 11
+# %% ../nbs/00_core.ipynb 10
 from fastcore.basics import patch
 import nbformat
 
@@ -53,7 +53,7 @@ def export_n4l_content(self:Path):
     
     return output_path
 
-# %% ../nbs/00_core.ipynb 13
+# %% ../nbs/00_core.ipynb 12
 def nbsstorytime_export():
     current_path = find_current_notebook()
     if(current_path): 

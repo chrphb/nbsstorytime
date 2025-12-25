@@ -52,7 +52,7 @@ find package manager specific guidelines on
 
 ## How to use
 
-Fill me in please! Don’t forget code examples:
+Example of a cell with N4L code:
 
 - my notes \# you give it a title \# and you can leave comments to
   yourself.
@@ -64,13 +64,3 @@ The \>ditto symbol of inverted commas has a special meaning
 
 Other symbols can be defined with your own meanings, like \>“special
 meanings”
-
-    - my notes     # you give it a title
-                   # and you can leave comments to yourself.
-
-    Mostly you just write notes
-        "  (e.g.)  This is a simple example that illustrates the line above
-
-    The >ditto symbol of inverted commas has a special meaning
-
-    Other symbols can be defined with your own meanings, like >"special meanings"
