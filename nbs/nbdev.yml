@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbsstorytime"
+  site-url: "https://chrphb.github.io/nbsstorytime"
+  description: "Python Library to write N4L notes from Jupyter Notebooks"
+  repo-branch: main
+  repo-url: "https://github.com/chrphb/nbsstorytime"
