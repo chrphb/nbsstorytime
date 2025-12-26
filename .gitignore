@@ -152,5 +152,5 @@ checklink/cookies.txt
 .quarto
 
 nbs/index.n4l
-nbs/00_core_p.ipynb
+nbs_prompts
 
