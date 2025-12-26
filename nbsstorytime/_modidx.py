@@ -8,5 +8,6 @@ d = { 'settings': { 'branch': 'main',
   'syms': { 'nbsstorytime.core': { 'nbsstorytime.core.Path.export_n4l_content': ( 'core.html#path.export_n4l_content',
                                                                                   'nbsstorytime/core.py'),
                                    'nbsstorytime.core.find_current_notebook': ('core.html#find_current_notebook', 'nbsstorytime/core.py'),
+                                   'nbsstorytime.core.find_dialog_name': ('core.html#find_dialog_name', 'nbsstorytime/core.py'),
                                    'nbsstorytime.core.find_dname': ('core.html#find_dname', 'nbsstorytime/core.py'),
                                    'nbsstorytime.core.nbsstorytime_export': ('core.html#nbsstorytime_export', 'nbsstorytime/core.py')}}}
