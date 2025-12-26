@@ -68,7 +68,7 @@ At the end of your notebook, you can add the Python code cell:
 This cell will export all your N4L cells content into a new file called
 with the same name as your notebook and the extension “.n4l”
 
-![demonstration](nbs/demo_jupyter_nbsstorytime.mp4)
+![demonstration](demo_jupyter_nbsstorytime.mp4)
 
 - my notes \# you give it a title \# and you can leave comments to
   yourself. Mostly you just write notes ” (e.g.) This is a simple
