@@ -51,8 +51,10 @@ extension”
 ![demonstration](demo_jupyter_nbsstorytime.mp4)
 
 - my notes \# you give it a title \# and you can leave comments to
-  yourself. Mostly you just write notes ” (e.g.) This is a simple
-  example that illustrates the line above
+  yourself.
+
+Mostly you just write notes ” (e.g.) This is a simple example that
+illustrates the line above
 
 ## Developer Guide
 
