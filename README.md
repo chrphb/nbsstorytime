@@ -52,6 +52,9 @@ Documentation can be found hosted on this GitHub
 find package manager specific guidelines on
 [pypi](https://pypi.org/project/nbsstorytime/).
 
+To learn more about the N4L semantic format, see [Mark Burgess’
+SSToryTime](https://github.com/markburgess/SSTorytime%5D)
+
 ## How to use
 
 Just use a Jupyter notebook and edit your cells.
