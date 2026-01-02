@@ -54,19 +54,20 @@ find package manager specific guidelines on
 
 ## How to use
 
-Just use Jupyter notebook and edit your cells.
+Just use a Jupyter notebook and edit your cells.
 
 When you want to write some N4L notes, add a new cell of type **raw**
-which starts by the line:
+that begins with:
 
         #| n4l
 
-At the end of your notebook, you can add the Python code cell:
+At the end of your notebook, add a Python code cell:
 
         import nbsstorytime; nbsstorytime.nbsstorytime_export() 
 
-This cell will export all your N4L cells content into a new file called
-with the same name as your notebook and the extension “.n4l”
+This cell will export the content of all your N4L cells content into a
+new file called with the same name as your notebook, but with a .n4l
+extension”
 
 ![demonstration](demo_jupyter_nbsstorytime.mp4)
 
