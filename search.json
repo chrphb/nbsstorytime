@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "import nbformat\n\n\ndef is_n4l_cell(cell):\n    \"\"\"Pure function to check if cell has n4l marker\"\"\"\n    return (cell.cell_type == 'raw' and \n            cell.source.strip().startswith('#| n4l'))\n\ndef extract_n4l_content(cell):\n    \"\"\"Pure function to extract content without marker\"\"\"\n    lines = cell.source.strip().split('\\n')\n    return '\\n'.join(lines[1:]).strip()\n\ndef process_notebook(notebook_path):\n    \"\"\"Main processing function using functional composition\"\"\"\n    with open(notebook_path, 'r') as f:\n        notebook = nbformat.read(f, as_version=4)\n    \n    # Functional pipeline\n    return list(map(extract_n4l_content, \n                   filter(is_n4l_cell, notebook.cells)))\n\n\nsource\n\nfind_dialog_name\n\n find_dialog_name ()\n\n\nfrom ipykernel import get_connection_info\n\n\n# Get full connection details\nconn_info = None\ntry:\n    conn_info = get_connection_info()\nexcept RuntimeError as e:\n    print(\"not running in notebook\", e)\nconn_info\n\n\nimport json\n\n\nsource\n\n\nfind_current_notebook\n\n find_current_notebook ()\n\n\nnb = None\ntry:\n    nb = find_current_notebook()\nexcept: pass\nnb\n\n\nsource\n\n\nPath.export_n4l_content\n\n Path.export_n4l_content ()\n\nAdd n4l export capability to any Path object\n\nsource\n\n\nnbsstorytime_export\n\n nbsstorytime_export ()",
+    "crumbs": [
+      "core"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbsstorytime",
+    "section": "",
+    "text": "Install latest from the GitHub repository:\n$ pip install git+https://github.com/chrphb/nbsstorytime.git\nor from pypi\n$ pip install nbsstorytime\n\n\n\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on pypi.\nTo learn more about the N4L semantic format, see Mark Burgess’ SSToryTime",
+    "crumbs": [
+      "nbsstorytime"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "nbsstorytime",
+    "section": "",
+    "text": "Install latest from the GitHub repository:\n$ pip install git+https://github.com/chrphb/nbsstorytime.git\nor from pypi\n$ pip install nbsstorytime\n\n\n\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on pypi.\nTo learn more about the N4L semantic format, see Mark Burgess’ SSToryTime",
+    "crumbs": [
+      "nbsstorytime"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbsstorytime",
+    "section": "How to use",
+    "text": "How to use\nJust use a Jupyter notebook and edit your cells.\nWhen you want to write some N4L notes, add a new cell of type raw that begins with:\n    #| n4l\nAt the end of your notebook, add a Python code cell:\n    import nbsstorytime; nbsstorytime.nbsstorytime_export() \nThis cell will export the content of all your N4L cells content into a new file called with the same name as your notebook, but with a .n4l extension”\n\n\nVideo\ndemonstration\n\n\n\nmy notes # you give it a title # and you can leave comments to yourself.\n\nMostly you just write notes ” (e.g.) This is a simple example that illustrates the line above",
+    "crumbs": [
+      "nbsstorytime"
+    ]
+  },
+  {
+    "objectID": "index.html#developer-guide",
+    "href": "index.html#developer-guide",
+    "title": "nbsstorytime",
+    "section": "Developer Guide",
+    "text": "Developer Guide\n\nInstall nbsstorytime in Development mode\n# make sure nbsstorytime package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to nbsstorytime\n$ nbdev_prepare",
+    "crumbs": [
+      "nbsstorytime"
+    ]
+  }
+]
