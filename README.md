@@ -53,7 +53,7 @@ find package manager specific guidelines on
 [pypi](https://pypi.org/project/nbsstorytime/).
 
 To learn more about the N4L semantic format, see [Mark Burgess’
-SSToryTime](https://github.com/markburgess/SSTorytime%5D)
+SSToryTime](https://github.com/markburgess/SSTorytime)
 
 ## How to use
 
